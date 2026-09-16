@@ -1,0 +1,70 @@
+## name: YOUR FULL NAME neptun: YOUR NEPTUN CODE id: 2026-LA-01
+
+# Design and Performance Optimization of a Relational Database for an Electric Vehicle Charging Network with AI Support
+
+## My interpretation of the brief
+
+My understanding of this project is that the main objective is to design and implement a relational database for an electric vehicle charging network and then investigate and improve its performance using measurement-based database optimization techniques.
+
+The system needs to represent the main business and technical entities of a charging network, including charging stations, charging points, users, vehicles, reservations, charging sessions, energy measurements, tariffs, payments, and technical events. The database must be designed to at least third normal form and must enforce important integrity and business rules at the database level.
+
+A major part of the project is the generation of a large reproducible test dataset. The database should contain at least one hundred thousand charging sessions and at least one million timestamped measurement or status records. This provides a realistic basis for analyzing the performance of complex SQL queries.
+
+I understand that performance optimization should be based on actual measurements and execution plans rather than assumptions. At least five analytical queries need to be investigated before and after optimization, including the effects of simple and composite indexes and, where appropriate, database-specific indexing techniques.
+
+Another interesting aspect of the project is the use of an external AI service to provide optimization or indexing suggestions. These suggestions must not simply be accepted automatically. They need to be reviewed, tested, and compared against solutions developed independently, with their correctness, executability, and measured performance documented.
+
+## Why I am a good fit for this project
+
+I am interested in database systems and performance optimization, particularly in understanding why a query performs slowly and how database design and indexing can improve it. This project combines relational database design with practical performance analysis, which makes it a good opportunity to develop both theoretical and hands-on database skills.
+
+The electric vehicle charging domain also provides a realistic data model with different types of relationships and large volumes of time-dependent data. Charging sessions, measurements, tariffs, and technical events naturally create situations where database design and query performance become important.
+
+I am also interested in investigating how AI tools can assist with technical tasks while still requiring human validation. Comparing AI-generated optimization suggestions with independently developed solutions would allow me to evaluate when such suggestions are useful and when they may not produce an actual improvement.
+
+## Relevant experience and background
+
+I have experience with relational database concepts, SQL, programming, and web technologies through coursework and personal projects. I understand the principles of normalization, relational modeling, primary and foreign keys, constraints, and SQL querying.
+
+I am also familiar with programming and Git-based version control, which would help me develop automated test-data generation and performance-measurement components in a reproducible way.
+
+I would like to further improve my knowledge of database performance analysis, particularly execution plans, indexing strategies, query optimization, stored procedures, and database-specific performance tools. The project provides a practical environment in which these concepts can be measured rather than studied only theoretically.
+
+## Proposed approach
+
+I would first analyze the requirements and design a normalized relational model covering charging stations, charging points, users, vehicles, reservations, charging sessions, energy consumption measurements, tariffs, payments, and technical events.
+
+I would then implement the database using Microsoft SQL Server, using T-SQL for database-side logic. Important relationships and business rules would be enforced through primary keys, foreign keys, unique constraints, checks, stored procedures, functions, and triggers where justified.
+
+A custom test-data generation component would be developed to produce at least one hundred thousand charging sessions and at least one million timestamped measurements or status records. The generation process would be deterministic or reproducible so that performance experiments can be repeated.
+
+I would create at least ten complex SQL queries representing realistic operational and business tasks. These would include multi-table joins, aggregation, time-interval searches, subqueries or CTEs, and window functions.
+
+For at least five queries, I would record baseline execution plans and runtime characteristics before optimization. I would then investigate indexing and query-optimization alternatives, including composite and filtered indexes where appropriate for Microsoft SQL Server. The effects would be measured quantitatively and the execution-plan changes would be documented.
+
+For at least three selected queries, I would additionally ask an external AI service to suggest indexing or query-optimization solutions. The suggestions would be reviewed manually and tested rather than executed automatically. I would compare them with my own solutions in terms of correctness, executability, execution plan, and measured performance.
+
+## Initial plan
+
+1. Analyze the charging-network requirements and identify the main entities and relationships.
+2. Design and normalize the relational database model to at least third normal form.
+3. Define keys, constraints, relationships, and important business rules.
+4. Implement the database using Microsoft SQL Server and T-SQL.
+5. Implement database-side business logic using stored procedures or functions and justified triggers.
+6. Develop a reproducible test-data generation component.
+7. Generate at least one hundred thousand charging sessions and at least one million timestamped measurement or status records.
+8. Create at least ten complex SQL queries representing realistic business and operational tasks.
+9. Measure execution plans and runtime characteristics for selected queries before optimization.
+10. Investigate simple, composite, and database-specific indexing and query-optimization techniques.
+11. Measure and compare the performance of at least five selected queries before and after optimization.
+12. Use an AI service to generate optimization suggestions for at least three selected queries.
+13. Manually review and test the AI-generated suggestions and compare them with my own solutions.
+14. Document the database design, measurements, optimization decisions, AI evaluation, limitations, and reproducible development process.
+
+## Additional information
+
+I plan to maintain the project in a Git repository from the beginning and keep the database schema, test-data generation scripts, SQL queries, measurement scripts, optimization experiments, and documentation version-controlled.
+
+My current technical direction is to use Microsoft SQL Server and T-SQL because it provides suitable tools for execution-plan analysis, performance measurements, indexing, stored procedures, and query optimization. I would use tools such as Actual Execution Plan, SET STATISTICS IO, SET STATISTICS TIME, and, where appropriate, Query Store during the performance investigation.
+
+I would treat AI-generated database recommendations as suggestions that require verification rather than as authoritative solutions. Any AI-generated SQL, T-SQL, or DDL would be reviewed before execution, and the security and data-protection implications of sending database-related information to an external AI service would be documented.
